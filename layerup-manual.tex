@@ -1,0 +1,32 @@
+\documentclass{beamer}
+\usepackage[utf8]{inputenc}
+\usetheme{Frankfurt}
+\setbeamertemplate{navigation symbols}{}
+\title{Showing \LaTeX Beamer Slides with JessyInk}
+\author{\texorpdfstring{Jochen Lüdering\newline\url{j@chaotisch.org}}{Jochen Lüdering}}
+
+\date{\today}
+\begin{document}
+\begin{frame}
+\maketitle
+\end{frame}
+\begin{frame}{What we do ...}
+Eventhough it might appear stupid. This script enables you to show Latex-Beamer slides with JessyInk, by turning them into a layered Inkscape-SVG.
+\end{frame}
+\begin{frame}{But Why?}
+\begin{enumerate}
+\item You want them to be shown in a browser
+\item You want to combine different slidesets, some being SVG other pdf
+\item You want to zoom-around on latex-beamer slides.
+\end{enumerate}
+\end{frame}
+\begin{frame}{Howto}
+\begin{enumerate}
+\item make sure pdf2svg is installed (and in the path)
+\item run ``layerup.py'' Your.pdf
+\item load resulting LayeredUp.svg in Inkscape
+\item use Inkscape to install JessyInk in the file and save
+\item open in browser
+\end{enumerate}
+\end{frame}
+\end{document}
